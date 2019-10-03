@@ -30,7 +30,9 @@
         <img :src="image" class="card-img-top rounded-circle" alt />
       </div>
       <h5 class="card-title text-center">{{ title }}</h5>
-      <p class="card-text text-center">{{ description }}</p>
+      <p class="card-text text-center" style="min-heigth: 4.5em;">
+        {{ description }}
+      </p>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" style="background:#fff;">
@@ -83,3 +85,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+p {
+  min-height: 6em;
+}
+</style>

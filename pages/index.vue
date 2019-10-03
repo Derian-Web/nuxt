@@ -3,7 +3,7 @@
     <h2 class="text-center">Real news, curated by real humans</h2>
     <div class="container d-flex">
       <div class="row m-0 ">
-        <div class="col-4" v-for="tag in aproved" :key="tag.id">
+        <div class="col-4 ml-5 mr-2 mt-3" v-for="tag in aproved" :key="tag.id">
           <card
             :title="tag.title"
             :description="tag.description"
@@ -64,7 +64,7 @@ export default {
       })
     },
     filternotapproved(tag) {
-      this.aproved = tag.filter(function(tag) {
+      this.notapproved = tag.filter(function(tag) {
         return tag.subscribed <= tag.target
       })
     }
