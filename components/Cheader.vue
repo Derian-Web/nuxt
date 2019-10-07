@@ -1,14 +1,16 @@
 <template>
   <div>
     <nav class="navbar navbar-light">
-      <a id="naranja1" class="navbar-brand">[ INSIDE ]</a>
+      <nuxt-link id="naranja1" class="navbar-brand" to="/">
+        [ INSIDE ]
+      </nuxt-link>
       <form class="form-inline">
         <a href class="mr-4 Narnjaicon">
           <i class="fas fa-search"></i>
         </a>
-        <a href class="mr-4 Narnjaicon">
+        <nuxt-link to="/login" class="mr-4 Narnjaicon">
           <i class="fas fa-user"></i>
-        </a>
+        </nuxt-link>
         <button
           class="btn btn-outline-success my-2 my-sm-0 boton-color"
           type="submit"

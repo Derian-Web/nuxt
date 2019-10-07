@@ -2,21 +2,23 @@
   <div>
     <div class="card shadow" style="width: 18rem;">
       <div
-        style="width: 150px; position: relative; left: 20px;"
+        style="width: 100px; position: relative; left: -35px;"
         class="ml-5 mt-2"
       >
-        <img :src="image" class="card-img-top rounded-circle" alt />
+        <img :src="image" class="card-img-top rounded-circle" />
       </div>
       <div class="card-body shadow">
-        <h5 class="card-title text-center">{{ title }}</h5>
-        <p class="card-text text-center">{{ description }}</p>
+        <div class="posicio-texto">
+          <h5 class="card-title text-left">{{ title }}</h5>
+          <p class="card-text">{{ description }}</p>
+        </div>
         <div class="input-group mb-3">
           <div class="input-group-prepend"></div>
         </div>
         <a
           @click="modalShow = !modalShow"
           class="btn text-center"
-          style="width: 100%; background:#FF8000; color:#fff;"
+          style="width: 100%; background:#FF8000; color:#fff; cursor: pointer;"
         >
           Vote
         </a>
@@ -42,3 +44,11 @@ export default {
   props: ['title', 'description', 'image']
 }
 </script>
+
+<style scoped>
+.posicio-texto {
+  position: relative;
+  left: 105px;
+  top: -120px;
+}
+</style>

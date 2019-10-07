@@ -1,6 +1,10 @@
 <template>
   <div>
     <h2 class="text-center">Real news, curated by real humans</h2>
+    <p class="text-muted text-center">
+      Packed with the trend, news links you need to be smart, ifrmoed,and ahead
+      of the curve
+    </p>
     <div class="container d-flex">
       <div class="row m-0 ">
         <div class="col-4 ml-5 mr-2 mt-3" v-for="tag in aproved" :key="tag.id">
@@ -15,7 +19,11 @@
     <h2 class="text-center mt-5">Up-and-coming</h2>
     <div class="container d-flex">
       <div class="row m-0 ">
-        <div class="col-4" v-for="tag in notapproved" :key="tag.id">
+        <div
+          class="col-4 ml-5 mr-2 mt-3"
+          v-for="tag in notapproved"
+          :key="tag.id"
+        >
           <vote
             :title="tag.title"
             :description="tag.description"

@@ -16,7 +16,7 @@
         <a
           @click="modalShow = !modalShow"
           class="btn text-center"
-          style="width: 100%; background:#FF8000; color:#fff;"
+          style="width: 100%; background:#FF8000; color:#fff; cursor: pointer;"
         >
           Subscribete
         </a>
