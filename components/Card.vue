@@ -10,9 +10,6 @@
       <div class="card-body shadow">
         <h5 class="card-title text-center">{{ title }}</h5>
         <p class="card-text text-center">{{ description }}</p>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend"></div>
-        </div>
         <a
           @click="modalShow = !modalShow"
           class="btn text-center"
@@ -58,6 +55,7 @@
 </template>
 <script>
 import axios from 'axios'
+import swal from 'sweetalert'
 export default {
   props: ['title', 'description', 'image'],
   data() {
@@ -76,7 +74,11 @@ export default {
         .post(url, this.form)
         .then((response) => {
           console.log(response.data)
-          alert('Se registró exitosamente')
+          swal({
+            title: 'Good job!',
+            text: 'subscribed successfully',
+            icon: 'success'
+          })
         })
         .catch(() => {
           alert('Tuvimos un error')

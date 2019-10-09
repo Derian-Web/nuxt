@@ -3,6 +3,14 @@ export default {
   /*
    ** Headers of the page
    */
+
+  generate: {
+    routes: [
+      '/category/',
+      '/dashboard/',
+      '/login/'
+    ]
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -16,7 +24,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
-      {src: "https://kit.fontawesome.com/effd4a3746.js"}
+      {src: "https://kit.fontawesome.com/effd4a3746.js"},
     ],
   },
   

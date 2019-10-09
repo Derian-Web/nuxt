@@ -1,25 +1,23 @@
 <template>
   <div>
-    <div class="card shadow" style="width: 18rem;">
+    <div class="card" style="width: 18rem; border:none;">
       <div
         style="width: 100px; position: relative; left: -35px;"
         class="ml-5 mt-2"
       >
         <img :src="image" class="card-img-top rounded-circle" />
       </div>
-      <div class="card-body shadow">
+      <div class="card-body">
         <div class="posicio-texto">
           <h5 class="card-title text-left">{{ title }}</h5>
           <p class="card-text">{{ description }}</p>
         </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend"></div>
-        </div>
         <a
           @click="modalShow = !modalShow"
-          class="btn text-center"
-          style="width: 100%; background:#FF8000; color:#fff; cursor: pointer;"
+          class="btn text-center position-vot border border-munted"
+          style="width: 350px; background:#fff; color:#FF8000; cursor: pointer;"
         >
+          <i class="fas fa-envelope" style="color:#FF8000;"></i>
           Vote
         </a>
       </div>
@@ -50,5 +48,10 @@ export default {
   position: relative;
   left: 105px;
   top: -120px;
+}
+
+.position-vot {
+  position: relative;
+  top: -100px;
 }
 </style>
