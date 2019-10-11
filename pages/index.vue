@@ -32,6 +32,17 @@
         </div>
       </div>
     </div>
+    <footer>
+      <section class="redes-sociales mt-5">
+        <div class="contenedor">
+          <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="Github"><i class="fab fa-github"></i></a>
+          <a href="" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </section>
+    </footer>
   </div>
 </template>
 
@@ -79,3 +90,24 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+footer .redes-sociales {
+  background: #ff8000;
+  padding: 20px 0;
+}
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: center;
+}
+footer .redes-sociales a {
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+}
+</style>

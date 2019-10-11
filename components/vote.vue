@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card" style="width: 18rem; border:none;">
+    <div class="card pl-5" style="width: 18rem; border:none;">
       <div
         style="width: 100px; position: relative; left: -35px;"
         class="ml-5 mt-2"
@@ -20,18 +20,6 @@
           <i class="fas fa-envelope" style="color:#FF8000;"></i>
           Vote
         </a>
-      </div>
-      <div class="progress">
-        <div
-          class="progress-bar"
-          role="progressbar"
-          style="width: 25%;"
-          aria-valuenow="25"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          25%
-        </div>
       </div>
     </div>
   </div>
