@@ -13,7 +13,7 @@
           <div class="col-lg-12">
             <table class="table table-striped">
               <thead>
-                <tr class="bg-primary text-light">
+                <tr class="text-light" style="background:#ff8000;">
                   <th>Title</th>
                   <th>Description</th>
                   <th>Image</th>
@@ -21,9 +21,9 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Producto</td>
-                  <td>Poducto</td>
+                <tr v-for="tag in tags" :key="tag.id">
+                  <td>{{ tag.title }}</td>
+                  <td>{{ tag.description }}</td>
                   <td>Producto</td>
                   <td>
                     <div class="btn-group" role="group">

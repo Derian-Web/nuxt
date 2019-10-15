@@ -1,26 +1,32 @@
 <template>
   <div>
-    <h2 class="text-center">Real news, curated by real humans</h2>
-    <p class="text-muted text-center">
-      Packed with the trend, news links you need to be smart, ifrmoed,and ahead
-      of the curve
-    </p>
-    <div class="container d-flex">
-      <div class="row m-0 ">
-        <div class="col-4 ml-5 mr-2 mt-3" v-for="tag in aproved" :key="tag.id">
-          <card
-            :title="tag.title"
-            :description="tag.description"
-            :image="tag.image"
-          />
+    <h1 class="title">Real news, curated by real humans</h1>
+    <h5 class="sub-title">
+      Packed with the trends, news links you need to be smart, informed, and
+      ahead of the curve
+    </h5>
+    <section id="team">
+      <div class="container my-3 py-5 text-center">
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6 mt-5"
+            v-for="tag in aproved"
+            :key="tag.id"
+          >
+            <card
+              :title="tag.title"
+              :image="tag.image"
+              :description="tag.description"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <h2 class="text-center mt-5">Up-and-coming</h2>
-    <div class="container d-flex">
+    <div class="container my-3 py-5 text-center">
       <div class="row m-0 ">
         <div
-          class="col-4 ml-5 mr-2 mt-3"
+          class="col-lg-4 col-md-6 mt-5"
           v-for="tag in notapproved"
           :key="tag.id"
         >
@@ -28,6 +34,7 @@
             :title="tag.title"
             :description="tag.description"
             :image="tag.image"
+            :subscribed="tag.subscribed"
           />
         </div>
       </div>
@@ -109,5 +116,17 @@ footer .redes-sociales a {
   border-radius: 3px;
   font-size: 30px;
   margin: 0 20px;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+.sub-title {
+  text-align: center;
+  font-weight: 100;
+  color: #6a6a6a;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-light">
+    <nav class="navbar navbar-light" id="size">
       <nuxt-link id="naranja1" class="navbar-brand" to="/">
         [ INSIDE ]
       </nuxt-link>
